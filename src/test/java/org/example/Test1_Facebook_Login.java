@@ -5,6 +5,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Test1_Facebook_Login {
 
@@ -12,6 +13,9 @@ public class Test1_Facebook_Login {
     public void login()
     {
         WebDriver driver = new ChromeDriver();
+        ChromeOptions options=new ChromeOptions();
+        // Define headless argument
+        options.addArguments("headless");
         driver.get("https://www.facebook.com/");
         driver.findElement(By.xpath("//input[@name='email']")).sendKeys("testuser@devopsxyz.com");
         driver.findElement(By.xpath("//input[@name='pass']")).sendKeys("abc@#12345");
