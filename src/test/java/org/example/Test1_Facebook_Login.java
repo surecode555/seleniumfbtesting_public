@@ -14,8 +14,9 @@ public class Test1_Facebook_Login {
     {
         WebDriver driver = new ChromeDriver();
         ChromeOptions options=new ChromeOptions();
-        // Define headless argument
-        options.addArguments("headless");
+        options.addArguments("--headless");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
         driver.get("https://www.facebook.com/");
         driver.findElement(By.xpath("//input[@name='email']")).sendKeys("testuser@devopsxyz.com");
         driver.findElement(By.xpath("//input[@name='pass']")).sendKeys("abc@#12345");
