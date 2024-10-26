@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69535cdc-433a-486d-ade4-eb512f7ed8fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Test1_Facebook_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Test1_Facebook_Login.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
