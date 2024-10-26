@@ -23,7 +23,8 @@ public class Test1_Facebook_Login {
         driver.findElement(By.xpath("//input[@name='pass']")).sendKeys("abc@#12345");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(100000));
-        boolean displayed = driver.findElement(By.xpath("//a[contains(text(),'Find your account and log in.')]")).isDisplayed();
+        //boolean displayed = driver.findElement(By.xpath("//a[contains(text(),'Find your account and log in.')]")).isDisplayed();
+        boolean displayed = driver.findElement(By.xpath("//*[@id=\"email_container\"]/div[2]/a")).isDisplayed();
         Assert.assertTrue("Expected message is true",displayed);
         System.out.println("Test script executed successfully");
         //driver.quit();
