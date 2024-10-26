@@ -19,10 +19,15 @@ public class Test1_Facebook_Login {
         WebDriver driver = new ChromeDriver(options);
 
         driver.get("https://www.facebook.com/");
+        System.out.println("URL launched");
         driver.findElement(By.xpath("//input[@name='email']")).sendKeys("testuser@devopsxyz.com");
+        System.out.println("Username is entered");
         driver.findElement(By.xpath("//input[@name='pass']")).sendKeys("abc@#12345");
+        System.out.println("Password is entered");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
+        System.out.println("Login button is clicked");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(100000));
+        System.out.println("wait time is over");
         //boolean displayed = driver.findElement(By.xpath("//a[contains(text(),'Find your account and log in.')]")).isDisplayed();
         boolean displayed = driver.findElement(By.xpath("//*[@id=\"email_container\"]/div[2]/a")).isDisplayed();
         Assert.assertTrue("Expected message is true",displayed);
