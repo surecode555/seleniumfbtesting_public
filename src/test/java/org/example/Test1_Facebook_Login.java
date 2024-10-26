@@ -15,7 +15,7 @@ public class Test1_Facebook_Login {
     public void login()
     {
         ChromeOptions options = new ChromeOptions();
-        //options.addArguments("--headless");
+        options.addArguments("--headless");
         WebDriver driver = new ChromeDriver(options);
 
         driver.get("https://www.facebook.com/");
